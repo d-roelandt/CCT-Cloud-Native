@@ -158,7 +158,7 @@ Les développeurs/concepteurs sont responsables du bon fonctionnement de l’app
    </td>
    <td>P
    </td>
-   <td>Mise en place organisationnelle et technique de modalité de collaboration étendue continue intégrant le flux d’erreur de la chaîne de DevSecOps Ministérielle. («  shift-lent »)
+   <td>Mise en place organisationnelle et technique de modalité de collaboration étendue continue intégrant le flux d’erreur de la chaîne de DevSecOps Ministérielle. («  shift-left »)
 <p>
 Exigence limitée à la durée du marché pour un opérateur économique, mais permanente pour la direction d’application.
    </td>
