@@ -259,13 +259,10 @@ Le **“shift-left” **(vers la gauche, du processus) fait référence à la re
 * Le développeur déclenche par appel API les services de synchro /  build / deploy. ( il n’y accède pas directement sauf via un Bastion)
 * **[3a][3b]** La chaîne d’orchestration DevSecOps effectue la récupération du code, des tests de qualité du code, scan de vulnérabilité des dépendances, la reconstruction, les tests de nos régressions, des tests d’homologation, vérification des manifests / charts etc… au regard des politiques de sécurité et dépose les images certifiées sur la registry de la chaîne ainsi que le code d’infrastructure.
 * Le concepteur/développeur accède à un retour d’information détaillée sur le succès ou sur les éventuels défauts, lors du build, deploy de l’application par DSO. ( via message ou webhook )
-* **[4]** : La console provisionne si nécessaires les environnements en ‘poussant’ les ressources nécessaires une foi (secrets, application.yaml (argo), certificats, etc... )
+* **[4]** : La console provisionne si nécessaires les environnements en ‘poussant’ les ressources nécessaires une fois (secrets, application.yaml (argo), certificats, etc... )
 * **[5]** : L’infrastructure vérifie régulièrement les changements sur le dépôt d’infrastructure (ou déclenchement forcé par API) et synchronise l’environnement à la cible visé et opère une bascule blue-green transparente, cf ArgoCD  ( si échec l’environnement de prod reste inchangé )
 * **[6]** : Le développeur accède à un proxy d’observation du fonctionnement de l’application
 * Note : Les développeurs n'accèdent pas directement à la production. Seuls les administrateurs habilités peuvent y avoir accès via bastion.
-
-
-###
 
 
 ### Préconisations générales d’architecture et technique
@@ -337,7 +334,7 @@ Le schéma (indicatifs) précise l’architecture d’intégration d’une appli
 
 ## 4 - Présentation de l’offre interMinistérielle Cloud Pi Native
 
-L’offre Cloud PI native DevSecOps répond aux exigences du CCT à travers un ensemble organisationnel et technique. Elle propose une offre Cloud régalienne, souveraineté, sécurisée et isolée de toute problématique juridique.
+L’offre Cloud PI native DevSecOps répond aux exigences du CCT à travers un ensemble organisationnel et technique. Elle propose une offre Cloud régalienne, souveraine, sécurisée et isolée de toute problématique juridique.
 
 Les offres d’hébergement compatibles avec les applications « Cloud Native » du ministère de l’intérieur sont :
 
